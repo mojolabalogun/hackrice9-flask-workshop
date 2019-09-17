@@ -6,7 +6,7 @@ app = Flask(__name__)
 def calculate():
     result = ""
     if request.method == "POST":
-        print request.form
+        print(request.form)
         expression = request.form.get('display')
         try:
             print(expression)
